@@ -10,6 +10,9 @@ export default {
   },
   entities: [Post],
   dbName: "lireddit",
+  port: 5432,
+  user: "vashisthbhushan",
   type: "postgresql",
   debug: !__prod__,
-} as Parameters<typeof MikroORM.init>[0];
+// } as const;
+ } as Parameters<typeof MikroORM.init>[0];
